@@ -1,0 +1,62 @@
+{
+    "name": "react-library-boilerplate",
+    "version": "1.0.0",
+    "description": "Starting point for my React components libraries",
+    "keywords": [],
+    "author": {
+        "name": "Jonathan Mataloni",
+        "email": "jo.mataloni@gmail.com",
+        "url": "https://wedial.it/jonathan-mataloni"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jonamat/react-library-boilerplate"
+    },
+    "engines": {
+        "node": ">=8.0.0",
+        "npm": ">=7.0.0"
+    },
+    "license": "MIT",
+    "main": "lib/cjs/index.js",
+    "module": "lib/esm/index.js",
+    "jsnext:main": "lib/esm/index.js",
+    "sideEffects": false,
+    "types": "./lib/esm/index.d.ts",
+    "files": [
+        "lib/**/*"
+    ],
+    "scripts": {
+        "build": "shx rm -rf ./lib/* && concurrently \"tsc --outDir ./lib/cjs --module commonjs --target es5 \" \"tsc --outDir ./lib/esm --module esnext --target esnext \" ",
+        "test": "jest .*.test.tsx?",
+        "test:watch": "jest .*.test.tsx? --watch",
+        "test:coverage": "jest .*.test.tsx? --coverage",
+        "lint": "eslint --ext .ts,.tsx ./src",
+        "lint:fix": "eslint --fix --ext .ts,.tsx ./src",
+        "prepublish": "npm run lint:fix && npm run test && npm run build"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "5.11.8",
+        "@testing-library/react": "11.2.3",
+        "@types/jest": "26.0.20",
+        "@types/react": "17.0.0",
+        "@types/react-dom": "17.0.0",
+        "@typescript-eslint/eslint-plugin": "4.12.0",
+        "@typescript-eslint/parser": "4.12.0",
+        "concurrently": "^5.3.0",
+        "eslint": "7.17.0",
+        "eslint-config-prettier": "7.1.0",
+        "eslint-plugin-prettier": "3.3.1",
+        "eslint-plugin-react": "7.22.0",
+        "jest": "26.6.3",
+        "prettier": "2.2.1",
+        "react-test-renderer": "^17.0.1",
+        "shx": "^0.3.3",
+        "ts-jest": "26.4.4",
+        "typescript": "4.1.3"
+    },
+    "peerDependencies": {
+        "prop-types": "^15.7.2",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    }
+}

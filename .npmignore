@@ -1,0 +1,13 @@
+/node_modules
+/src
+/coverage
+/tests
+.vscode
+.eslintrc
+.eslintignore
+.gitignore
+.gitattributes
+.prettierrc
+.editorConfig
+tsconfig.json
+jest.config.js
