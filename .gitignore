@@ -1,8 +1,7 @@
 node_modules
 package-lock.json
 yarn.lock
-
-# Uncomment in real libraries
-# .vscode
-# lib
-# coverage
+.vscode
+lib
+coverage
+/dev_res
