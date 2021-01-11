@@ -7,12 +7,13 @@
             "request": "launch",
             "runtimeArgs": [
                 "--inspect-brk",
-                "${workspaceRoot}/node_modules/.bin/jest",
+                "${workspaceRoot}/node_modules/jest/bin/jest.js",
                 "--runInBand",
-                "false"
+                "--testPathPattern=${fileBasenameNoExtension}"
             ],
             "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen"
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229
         }
     ]
 }
