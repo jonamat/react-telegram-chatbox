@@ -1,7 +1,4 @@
-import MyComponent from './MyComponent';
+import Chatbox from './Chatbox';
+export default { Chatbox };
 
-export default {
-    MyComponent,
-};
-
-export { default as MyComponent } from './MyComponent';
+export { default as Chatbox } from './Chatbox';
