@@ -3,12 +3,12 @@
     "version": "1.0.0",
     "description": "Chat widget connected to your Telegram account for instant messaging into your React website",
     "keywords": [
-      "telegram",
-      "chat",
-      "chatbox",
-      "widget",
-      "react",
-      "messaging"
+        "telegram",
+        "chat",
+        "chatbox",
+        "widget",
+        "react",
+        "messaging"
     ],
     "author": {
         "name": "Jonathan Mataloni",
@@ -36,9 +36,9 @@
         "TEST": "yarn \"TEST unit\" && yarn \"TEST integration\" ",
         "TEST coverage": "jest ./tests/.*.test.tsx? --maxWorkers=4 --coverage",
         "TEST watch": "jest tests/.*.test.tsx? --watch",
-        "TEST unit": "jest ./tests/unit/.*.test.tsx? --maxWorkers=4",
+        "TEST unit": "jest ./tests/unit/.*.test.tsx? --maxWorkers=4 --passWithNoTests",
         "TEST unit --watch": "jest ./tests/unit/.*.test.tsx? --watch",
-        "TEST integration": "jest ./tests/integration/.*.test.tsx? --maxWorkers=4",
+        "TEST integration": "jest ./tests/integration/.*.test.tsx? --maxWorkers=4 --passWithNoTests",
         "TEST integration --watch": "jest ./tests/integration/.*.test.tsx? --watch",
         "BUILD": "shx rm -rf ./lib/* && concurrently \" yarn \\\"BUILD cjs\\\" \" \" yarn \\\"BUILD esm\\\" \" && yarn \"BUILD types\" ",
         "BUILD cjs": "tsc --outDir ./lib/cjs --module commonjs --target es5 ",
