@@ -2,7 +2,14 @@
     "name": "react-telegram-chatbox",
     "version": "1.0.0",
     "description": "Chat widget connected to your Telegram account for instant messaging into your React website",
-    "keywords": [],
+    "keywords": [
+      "telegram",
+      "chat",
+      "chatbox",
+      "widget",
+      "react",
+      "messaging"
+    ],
     "author": {
         "name": "Jonathan Mataloni",
         "email": "jo.mataloni@gmail.com",
